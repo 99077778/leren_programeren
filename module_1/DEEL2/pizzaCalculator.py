@@ -15,9 +15,9 @@ while True:
 
 
 
-price_small = '7,99'
-price_medium = '9,99'
-price_large = '12,99'
+price_small = float(7.99)
+price_medium = float(9.99)
+price_large = float(12.99)
 
 
 
