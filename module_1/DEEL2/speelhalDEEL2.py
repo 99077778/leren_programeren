@@ -6,9 +6,9 @@ aantal_entree = int(input("Hoeveel entreekaartjes wil je bestellen? "))
 
 #GAMESEAT
 PRIJS_VIPVR_5MIN = 37
-aantal_vipvr_minuten = int(input("Hoeveel minuten wil je op de VIP VR-gamestoel zitten? "))
+aantal_vipvr_minuten = int(input("Hoeveel minuten wil je op de VIP VR-gameseat zitten? "))
 VIPVR_DELENDOOR5MIN = 5
-aantal_vipvr_personen = int(input("Met hoeveel personen wil je gebruik maken van de VIP VR-gamestoel? "))
+aantal_vipvr_personen = int(input("Met hoeveel personen wil je gebruik maken van de VIP VR-gameseat? "))
 
 
 
