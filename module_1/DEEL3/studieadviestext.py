@@ -47,29 +47,29 @@ print(STUDIEDOKTER_TITEL)
 
 print(OPTIES)
 
-# Ask about the number of weeks studied
+
 aantal_weken_vraag = int(input(AANTAL_WEKEN_VRAAG))
 
-# Conditionally ask questions 6 and 7 based on the number of weeks studied
+
 if aantal_weken_vraag >= 10:
     competentie_stelling_6 = int(input(COMPETENTIE_STELLING_6))
     competentie_stelling_7 = int(input(COMPETENTIE_STELLING_7))
 else:
-    competentie_stelling_6 = competentie_stelling_7 = NOOIT  # Set to a default value if not asked
+    competentie_stelling_6 = competentie_stelling_7 = NOOIT  \
 
-# Ask other questions
+
 competentie_stelling_1 = int(input(COMPETENTIE_STELLING_1))
 competentie_stelling_2 = int(input(COMPETENTIE_STELLING_2))
 competentie_stelling_3 = int(input(COMPETENTIE_STELLING_3))
 competentie_stelling_4 = int(input(COMPETENTIE_STELLING_4))
 competentie_stelling_5 = int(input(COMPETENTIE_STELLING_5))
 
-# Provide advice based on the score
+
 
 antwoorden = [competentie_stelling_1, competentie_stelling_2, competentie_stelling_3, competentie_stelling_4, competentie_stelling_5, competentie_stelling_6, competentie_stelling_7]
 
 
-# Tellen van het aantal antwoorden 'altijd', 'vaak' en 'regelmatig'
+
 aantal_altijd = sum(answer == ALTIJD for answer in antwoorden)
 aantal_vaak = sum(answer == VAAK for answer in antwoorden)
 aantal_regelmatig = sum(answer == REGELMATIG for answer in antwoorden)
