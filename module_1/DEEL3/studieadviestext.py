@@ -74,13 +74,14 @@ aantal_altijd = sum(answer == ALTIJD for answer in antwoorden)
 aantal_vaak = sum(answer == VAAK for answer in antwoorden)
 aantal_regelmatig = sum(answer == REGELMATIG for answer in antwoorden)
 
-# Berekenen van de gemiddelde score
+
+
 gemiddelde_score = (
     competentie_stelling_1 + competentie_stelling_2 + competentie_stelling_3 +
     competentie_stelling_4 + competentie_stelling_5 + competentie_stelling_6 + competentie_stelling_7
 ) / GEMIDDELD
 
-# Verbeterd advies gebaseerd op de gegeven criteria
+
 if gemiddelde_score <= 2 or aantal_altijd + aantal_vaak > 3.5:
     advies = COMPETENTIE_ADVIES_ZORGELIJK
 elif gemiddelde_score <= 3 or aantal_altijd + aantal_vaak + aantal_regelmatig > 3.5:
@@ -88,7 +89,8 @@ elif gemiddelde_score <= 3 or aantal_altijd + aantal_vaak + aantal_regelmatig > 
 else:
     advies = COMPETENTIE_ADVIES_GERUSTSTELLEND
 
-# Tonen van het verbeterde advies
+
 print(f'\nVerbeterd Advies: {advies}\n')
+
 
 
