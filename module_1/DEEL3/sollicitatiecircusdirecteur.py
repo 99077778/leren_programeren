@@ -1,3 +1,5 @@
+
+
 MAX_GEWICHT = 120
 MIN_GEWICHT = 90
 MAX_LANGTE = 220
@@ -43,3 +45,11 @@ if (vrachtwagen_rijbewijs == 'ja'
 
 else:
     print('u voldoet niet aan onze strenge eizen voor de functie Circusdirecteur, Helaas het spijt ons ')
+
+
+
+
+
+
+
+
