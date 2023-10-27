@@ -1,4 +1,5 @@
 
+
 geelkaas = input('Is de kaas geel? (ja/nee): ').lower()
 
 if geelkaas == 'ja':
@@ -43,3 +44,7 @@ elif geelkaas == 'nee':
         print('Ongeldige invoer voor schimmel')
 else:
     print('Ongeldige invoer voor geelkaas')
+
+
+
+

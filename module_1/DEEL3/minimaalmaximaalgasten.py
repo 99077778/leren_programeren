@@ -1,7 +1,7 @@
 MIJN_NAAM = 'oskar'
 SLB_NAAM = "jouke"
 
-gastheer = input('Wie is de gastheer: ')
+gastheer = input('Wie is de gastheer: ').lower()
 
 gasten = int(input('Hoeveel gasten: '))
 

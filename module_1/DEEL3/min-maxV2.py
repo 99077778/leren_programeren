@@ -1,3 +1,6 @@
+
+
+
 a = int(input('voer een getal in voor A: '))
 b = int(input('voer een getal in voor B: '))
 
