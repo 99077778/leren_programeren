@@ -4,17 +4,19 @@
 a = int(input('voer een getal in voor A: '))
 b = int(input('voer een getal in voor B: '))
 
-MAX = 0
-MIN = 0
+maximaal = 0
+minimaal = 0
 
 if a > b:
-    print(f'A is het grootste getal: ')
-    MAX = a
+    print(f'A is het grootste getal: ({a})')
+    maximaal = a
 elif a < b:
-    print(f'A is het kleinste getal: ')
-    MIN = a
+    print(f'A is het kleinste getal: ({a})')
+    minimaal = a
 else:
-    print(f'A en B zijn even groot')
+    print(f'A en B zijn even groot, waarde van A en B = {a}')
+
+
 
 
 
