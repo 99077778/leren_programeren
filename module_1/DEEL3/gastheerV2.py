@@ -1,15 +1,15 @@
-MIJN_NAAM = 'oskar'
-SLB_NAAM = 'jouke'
+mijn_naam = 'oskar'
+slb_naam = 'jouke'
 
 gastheer = input('Wie is de gastheer?').lower()
 gasten = 0
 drank = 1
 chips = 0
 
-start_mijnnaam = gastheer == MIJN_NAAM
+start_mijnnaam = gastheer == mijn_naam
 start_gastenchipsdrank = gasten and chips and drank 
 start_gastheerdrank = gastheer and drank
-start_slbnaam = gastheer != SLB_NAAM
+start_slbnaam = gastheer != slb_naam
 
 
 
