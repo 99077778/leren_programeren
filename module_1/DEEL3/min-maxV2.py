@@ -1,6 +1,5 @@
 
 
-
 a = int(input('voer een getal in voor A: '))
 b = int(input('voer een getal in voor B: '))
 
@@ -30,10 +29,6 @@ else:
 
 
 
-# if a > b:
-#     print(f'Het minimum is: {min}')
-# elif a < b:
-#     print(f'Het maximum is: {max}')
 
 
  
