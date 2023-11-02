@@ -29,7 +29,12 @@ elif geelkaas == 'nee':
         if korst == 'ja':
             print('Blue de Rochbaron')
         elif korst == 'nee':
-            print('Foume dambert')
+            droog = input('Is de kaas droog? (ja/nee): ').lower()
+            if droog == 'ja':
+                print('Foume d ambert')
+            elif droog == 'nee':
+                print('Roque Fort')
+            else: print('Ongeldige invoer voor droog')
         else:
             print('Ongeldige invoer voor korst')
     elif schimmel == 'nee':
