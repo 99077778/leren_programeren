@@ -10,8 +10,8 @@ def deel_getallen(a, b):
 
 
 
-getal_2 = vraag_getal("tweede")
 getal_1 = vraag_getal("eerste")
+getal_2 = vraag_getal("tweede")
 
 
 

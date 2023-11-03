@@ -13,6 +13,10 @@ while True:
         if groote < 1 or groote > 3:
             raise ValueError("Ongeldige keuze. Kies een nummer tussen 1 en 3.")
         
+    except ValueError as e:
+        print(f"Fout: {e}")
+
+        
         if groote == 1:
             pizza = "small"
             prijs = 7.99
@@ -28,12 +32,11 @@ while True:
         print(f"De prijs van de gekozen pizza ({pizza}) is: €{prijs:.2f}")
         
 
-        #Nog een pizza bestellen
-        bestel_opnieuw = input("Wil je nog een pizza bestellen? (ja/nee): ").strip().lower()
-        if bestel_opnieuw != 'ja':
-            break
-    except ValueError as e:
-        print(f"Fout: {e}")
+    #Nog een pizza bestellen
+    bestel_opnieuw = input("Wil je nog een pizza bestellen? (ja/nee): ").strip().lower()
+    if bestel_opnieuw != 'ja':
+        break
+    
 
 
 #Bestellijst

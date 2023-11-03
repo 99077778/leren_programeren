@@ -1,7 +1,7 @@
 
 
-a = str(input('Geef een woord'))
-b = str(input('Geef nog een woord'))
+a = input('Geef een woord')
+b = input('Geef nog een woord')
 
 
 if len(a) > len(b):     
