@@ -10,12 +10,14 @@ bestellingen = []
 while True:
     try:
         groote = int(input('Welke pizza wil je, kies het nummer: [1] small, [2] medium, [3] large : '))
-        if groote < 1 or groote > 3:
-            raise ValueError("Ongeldige keuze. Kies een nummer tussen 1 en 3.")
         
     except ValueError as e:
         print(f"Fout: {e}")
-
+      
+      
+        #if groote < 1 or groote > 3:
+            #raise ValueError("Ongeldige keuze. Kies een nummer tussen 1 en 3.")
+   
         
         if groote == 1:
             pizza = "small"
@@ -32,11 +34,11 @@ while True:
         print(f"De prijs van de gekozen pizza ({pizza}) is: €{prijs:.2f}")
         
 
-    #Nog een pizza bestellen
-    bestel_opnieuw = input("Wil je nog een pizza bestellen? (ja/nee): ").strip().lower()
-    if bestel_opnieuw != 'ja':
-        break
-    
+        #Nog een pizza bestellen
+        bestel_opnieuw = input("Wil je nog een pizza bestellen? (ja/nee): ").strip().lower()
+        if bestel_opnieuw != 'ja':
+            break
+ 
 
 
 #Bestellijst
