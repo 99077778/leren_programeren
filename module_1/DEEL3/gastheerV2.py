@@ -3,7 +3,7 @@ slb_naam = 'jouke'
 
 gastheer = input('Wie is de gastheer?').lower()
 gasten = 0
-drank = 1
+drank = 0
 chips = 0
 
 start_mijnnaam = gastheer == mijn_naam

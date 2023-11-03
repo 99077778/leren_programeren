@@ -1,3 +1,6 @@
+
+
+
 gastheer = 0
 gasten = 0
 drank = 0

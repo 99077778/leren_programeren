@@ -25,24 +25,12 @@ jongleren = int(input('hoe veel jaar ervaring heb je met jongleren (voer cijfer 
 acrobatiek = int(input('hoe veel jaar ervaring heb je met acrobatiek (voer cijfer in): '))
 
 
-if (vrachtwagen_rijbewijs == 'ja'
-    and hoed == 'ja'
-    and gewicht >= MIN_GEWICHT and gewicht <= MAX_GEWICHT
-    and langte >= MIN_LANGTE and langte <= MAX_LANGTE
-    and certificaat == 'ja'
-    and (dieren_dressuur >= 4 or jongleren >= 5 or acrobatiek >= 3)
-):
-    print('Gefeliciteerd je komt in aanmerking voor deze functie ')
-# elif (
-#         vrachtwagen_rijbewijs == 'ja'
-#         and hoed == 'ja'
-#         and (gewicht >= MIN_GEWICHT and gewicht <= MAX_GEWICHT)
-#         and (langte >= MIN_LANGTE and langte <= MAX_LANGTE)
-#         and certificaat == 'ja'
-#         and jongleren >= 5 or acrobatiek >= 3
-# ):
-#     print('Gefeliciteerd je komt in aanmerking voor deze functie')
+geschikt = vrachtwagen_rijbewijs == 'ja' and hoed == 'ja' and gewicht >= MIN_GEWICHT and gewicht <= MAX_GEWICHT and langte >= MIN_LANGTE and langte <= MAX_LANGTE and certificaat == 'ja' and (dieren_dressuur >= 4 or jongleren >= 5 or acrobatiek >= 3)
 
+
+if geschikt:
+    print('Gefeliciteerd je komt in aanmerking voor deze functie ')
+    
 else:
     print('u voldoet niet aan onze strenge eizen voor de functie Circusdirecteur, Helaas het spijt ons ')
 

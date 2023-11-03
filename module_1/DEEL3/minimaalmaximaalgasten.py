@@ -5,7 +5,7 @@ gastheer = input('Wie is de gastheer: ').lower()
 
 gasten = int(input('Hoeveel gasten: '))
 
-drank = 1
+drank = 0
 chips = 0
 
 
