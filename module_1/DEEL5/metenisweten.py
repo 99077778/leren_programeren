@@ -1,5 +1,6 @@
 
-def nummers(nr1: int, nr2: int) -> str:
+
+def nummers(nr1: int, nr2: int):
     if nr1 == nr2:
         return'Allebij de getallen zijn even groot'
     elif nr1 > nr2:
