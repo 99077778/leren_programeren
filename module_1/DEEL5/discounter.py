@@ -20,7 +20,7 @@ price = 550.25
 brand = 'Vespa'
 discount = calc_discount(price, brand, month_discount_brands)
 test("Test 1", 55.02, discount)  
-
+ 
 
 brand = 'Piaggio'
 discount = calc_discount(price, brand, month_discount_brands)
