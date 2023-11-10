@@ -26,6 +26,11 @@ brand = 'Piaggio'
 discount = calc_discount(price, brand, month_discount_brands)
 test("Test 2", 0.0, discount)  
 
+# brand = 'Bmw'
+# price = 5000.00
+# discount = calc_discount(price, brand, month_discount_brands)
+# test("Test exttra", 0.00, discount) 
+
 
 price = 999.99
 brand = 'Yamaha'
