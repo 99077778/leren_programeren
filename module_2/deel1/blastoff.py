@@ -8,9 +8,9 @@
 import time
 
 
-tijd = 30
+# tijd = 30
 
-for teller in range(tijd, 0, -1):
+for teller in range(30, 0, -1):
     print(teller)
     time.sleep(1)
 
