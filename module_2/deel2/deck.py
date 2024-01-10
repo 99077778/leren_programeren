@@ -14,6 +14,9 @@ for kaart in kaarten:
         huidige_kaart = f'{kaart} {waarde}'
         deck.append(huidige_kaart)
 
+        # if kaart == 'Joker':
+        #     kaart.split()
+
 
 random.shuffle(deck)
 

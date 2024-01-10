@@ -18,7 +18,7 @@
 
 
 
-
+#todo lijst op lijst altijd vershcil van 5
 
 def lijstmaken():
 
@@ -27,7 +27,7 @@ def lijstmaken():
     
     for i in range(1,num_lijst+1):
         list_length = int(input(f'Hoeveel voor lijst {i}: '))
-        nieuwe = list(range(i, i * list_length + 1, i))
+        nieuwe = list(range(i, i * list_length + 5, i))
         lijsten.append(nieuwe)
 
     return lijsten

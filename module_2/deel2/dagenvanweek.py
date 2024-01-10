@@ -70,9 +70,10 @@ if welke == 1:
         for dag in dagen:
             print(dag)
     elif omgedraaid == 1:
-        omgedraaide_dagen = reversed(dagen)
-        for dag in omgedraaide_dagen:
-            print(dag)
+        # omgedraaide_dagen = reversed(dagen)
+        print(dagen[7 : : -1])
+        # for dag in omgedraaide_dagen:
+        #     print(dag)
 
 # werk week
 elif welke == 2:
@@ -93,3 +94,7 @@ elif welke == 3:
         omgedraaide_dagen = reversed(dagen[5:])
         for dag in omgedraaide_dagen:
             print(dag)
+
+
+
+
