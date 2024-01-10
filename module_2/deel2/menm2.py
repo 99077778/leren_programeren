@@ -11,11 +11,12 @@ hoeveel_totaal = int(input('Hoeveel MenM wil je: '))
 
 aantal_perkleur = {kleur: random.randint(1, hoeveel_totaal) for kleur in menm}
 totaal = sum(aantal_perkleur.values())
+print(aantal_perkleur)
 
 
 factor = hoeveel_totaal / totaal
 aantal_perkleur = {kleur: int(aantal * factor) for kleur, aantal in aantal_perkleur.items()}
-
+print(factor)
 
 verschil = hoeveel_totaal - sum(aantal_perkleur.values())
 aantal_perkleur[menm[-1]] += verschil
