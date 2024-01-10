@@ -41,12 +41,12 @@
 
 
 
-# def translate_text(text, translation_dict):
+# def translate_text(text, translation_dictonary):
 #     words = text.split()
-#     translated_words = [translation_dict.get(word, word) for word in words]
+#     translated_words = [translation_dictonary.get(word, word) for word in words]
 #     return " ".join(translated_words)
 
-vertaal_dict = {
+vertaal_dictonary = {
     'hart': 'ingang',
     'grot': 'grot',
     'zagen': 'zagen',
@@ -72,8 +72,8 @@ originele_tekst = input("Voer een stukje tekst in: ")
  
 woorden = originele_tekst.split()
  
-vertaalde_tekst = [vertaal_dict.get(woord, woord) for woord in woorden]
-#vertaalde_tekst = translate_text(originele_tekst, vertaal_dict)
+vertaalde_tekst = [vertaal_dictonary.get(woord, woord) for woord in woorden]
+#vertaalde_tekst = translate_text(originele_tekst, vertaal_dictonary)
 
 
  
