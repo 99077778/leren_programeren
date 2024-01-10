@@ -30,7 +30,7 @@ print(f'groen: {hoeveelgroen}')
 print(f'bruin: {hoeveelbruin}')
 
 
-print(f'totaal: {totaal}')
+print(f'totaal: {totaal}') 
 
 
 
