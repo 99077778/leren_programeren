@@ -1,4 +1,4 @@
-# def translate_word(word):
+# def vertaal_word(word):
 #     translation_dict = {
 #         "Draganthor": "geit",
 #         "schubben": "teennagels",
@@ -8,15 +8,15 @@
 #     }
 #     return translation_dict.get(word, word)
 
-# def translate_sentence(sentence):
-#     return " ".join(translate_word(word) for word in sentence.split())
+# def vertaal_sentence(sentence):
+#     return " ".join(vertaal_word(word) for word in sentence.split())
 
 # def main():
 #     sentence = input("Voer een stukje tekst in: ")
-#     translated_sentence = translate_sentence(sentence)
+#     vertaalde_sentence = vertaal_sentence(sentence)
 
-#     print("Vertaalde tekst:")
-#     print(translated_sentence)
+#     print("vertaalde tekst:")
+#     print(vertaalde_sentence)
 
 # if __name__ == "__main__":
 #     main()
@@ -41,10 +41,10 @@
 
 
 
-# def translate_text(text, translation_dictonary):
+# def vertaal_text(text, translation_dictonary):
 #     words = text.split()
-#     translated_words = [translation_dictonary.get(word, word) for word in words]
-#     return " ".join(translated_words)
+#     vertaalde_words = [translation_dictonary.get(word, word) for word in words]
+#     return " ".join(vertaalde_words)
 
 vertaal_dictonary = {
     'hart': 'ingang',
@@ -73,9 +73,10 @@ originele_tekst = input("Voer een stukje tekst in: ")
 woorden = originele_tekst.split()
  
 vertaalde_tekst = [vertaal_dictonary.get(woord, woord) for woord in woorden]
-#vertaalde_tekst = translate_text(originele_tekst, vertaal_dictonary)
+#vertaalde_tekst = vertaal_text(originele_tekst, vertaal_dictonary)
 
 
  
-print("Vertaalde tekst:")
+print("vertaalde tekst:")
 print(" ".join(vertaalde_tekst))
+
