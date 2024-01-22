@@ -12,7 +12,7 @@ vertaal_dictonary = {
 
 orginele_tekst = input("Voer stukje text in: ")
 
-woorden = orginele_tekst.split() 
+woorden = orginele_tekst.split()
 vertaalde_text = []
 
 for woord in woorden:
@@ -24,7 +24,5 @@ for woord in woorden:
 print("vertaalde zin: ")
 for vertaalde_woord in vertaalde_text:
     print(vertaalde_woord, end=" ")
-
-#print(" ".join(vertaalde_text))
 
 
