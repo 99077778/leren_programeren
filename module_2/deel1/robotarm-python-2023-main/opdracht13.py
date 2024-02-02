@@ -3,8 +3,24 @@ from RobotArm import RobotArm
 robotArm = RobotArm()
 robotArm.randomLevel(1,7)
 
-# Jouw python instructies zet je vanaf hier:
 
 
-# Na jouw code wachten tot het sluiten van de window:
+hoveel = 1
+
+for _ in range(7):
+    robotArm.grab()
+    colour = robotArm.scan()
+    if colour == 'white' or colour == 'red' or colour == 'green' or colour == 'blue' or colour == 'yellow':
+        for _ in range(hoveel):
+            robotArm.moveRight()
+        
+        robotArm.drop()
+        for _ in range(hoveel):
+            robotArm.moveLeft()
+        hoveel +=1
+    else:
+        break
+
+
+
 robotArm.wait()
