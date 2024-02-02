@@ -13,8 +13,7 @@ for n in range(9):
         robotArm.drop()
         hoveel -= 1
         for _ in range(hoveel):
-            robotArm.moveLeft()
-        
+            robotArm.moveLeft()        
     else:
         robotArm.drop()
         robotArm.moveRight()

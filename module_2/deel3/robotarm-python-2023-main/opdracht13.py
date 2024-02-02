@@ -10,7 +10,7 @@ hoveel = 1
 for _ in range(7):
     robotArm.grab()
     colour = robotArm.scan()
-    if colour:
+    if colour == 'white' or colour == 'red' or colour == 'green' or colour == 'blue' or colour == 'yellow':
         for _ in range(hoveel):
             robotArm.moveRight()
         
