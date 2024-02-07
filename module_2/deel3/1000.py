@@ -11,7 +11,7 @@
 # 4. 50 + 51 + 52 + 53 + 54 = 260
 
 
-waarde50 = 50
+
 waarde = 50
 
 totaal = 0
@@ -21,10 +21,9 @@ iritaite = 1
 som = 50
 
 while totaal < 1000:
-    waarde = waarde +1
-    som = f'{som} + {waarde}'
+    waarde = waarde +1 #elke keer een erbij
+    som = f'{som} + {waarde}' #som uitrekenen
     totaal = totaal + waarde
     print(f"{iritaite}. {som} = {totaal}")
     iritaite += 1
-    #waarde += 1
 
