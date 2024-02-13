@@ -20,7 +20,7 @@ for _ in range(10):
     if counter == 2 or counter == 4 or counter == 7:
         hoveel = hoveel +1
     for _ in range(hoveel):
-        print(hoveel)
+        #print(hoveel)
         robotArm.moveLeft()
     
         

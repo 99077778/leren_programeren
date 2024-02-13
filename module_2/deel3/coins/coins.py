@@ -10,6 +10,7 @@ change = paid - toPay # wisselgeld in centen rekenen
 
 if change > 0: # doorgaan als er wisselgeld moet
   coinValue = 500 # met grootste hoveelheid beginnen
+  teruggegeven_munten = {}
   
   while change > 0 and coinValue > 0: # door gaan totdat de wisselgeld compleet is
     nrCoins = change // coinValue # de goede aantal centen rekkenen met bedrag
@@ -18,6 +19,7 @@ if change > 0: # doorgaan als er wisselgeld moet
       print('return maximal ', nrCoins, ' coins of ', coinValue, ' cents!' ) #
       nrCoinsReturned = int(input('How many coins of ' + str(coinValue) +  ' cents did you return? ')) #
       change -= nrCoinsReturned * coinValue #
+      teruggegeven_munten[coinValue] = nrCoins
 
 # verander centen value naar de volgende lagere bedrag
     if coinValue == 500:
@@ -43,3 +45,13 @@ if change > 0: # als er nog wisselgeld over is
   print('Change not returned: ', str(change) + ' cents')
 else:
   print('done') #als alles wisselgeld compleet is
+print('de wisselgeld oversicht')
+for waarde, aantal in teruggegeven_munten.items():
+  print('muntwaarde:' ,waarde ,'cent - aantal:', aantal)
+
+
+
+
+
+else:
+  print('geen wisselgeld')
