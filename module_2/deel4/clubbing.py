@@ -13,7 +13,7 @@ bandje = ''
 stempel = 0
 
 
-probeerlater = f'Probeer het in {18 - leeftijd} jaar nog eens'
+probeerlater = f'Probeer het in {21-leeftijd} jaar nog eens'
 
 complimenten = 'Alstublieft, complimenten van het huis'
 
@@ -51,12 +51,12 @@ if drinken == 'cola':
     else:
         print(jecola)
 elif drinken == 'bier':
-    if stempel == 1 or bandje == 'blauw' or bandje == 'rood':
-        if bandje == 'blauw' or bandje == 'rood':
+    if stempel == 1 or bandje == 'blauw':
+        if bandje == 'blauw':
             print(complimenten)
         else:
             print(jebier)
-    else:
+    else: 
         print(geenalchol)
         print(probeerlater)
 elif drinken == 'champagne':
