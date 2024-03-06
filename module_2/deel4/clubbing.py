@@ -14,6 +14,7 @@ stempel = 0
 
 
 probeerlater = f'Probeer het in {21-leeftijd} jaar nog eens'
+probeerlater18 = f'Probeer het in {18-leeftijd} jaar nog eens'
 
 complimenten = 'Alstublieft, complimenten van het huis'
 
@@ -27,7 +28,7 @@ time.sleep(.5)
 
 if leeftijd < 18:
     print('Sorry je mag niet naar binnen')
-    print(probeerlater)
+    print(probeerlater18)
     exit()
 else:
     naam = input('Wat is je naam?: ').lower()
