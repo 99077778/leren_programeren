@@ -44,3 +44,8 @@ print('''
 
 for item, hoeveelheid in boodschappenlijst.items():
     print(f"{hoeveelheid} x {item}")
+
+
+
+
+print(boodschappenlijst)
