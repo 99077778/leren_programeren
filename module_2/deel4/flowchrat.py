@@ -24,36 +24,40 @@ while rondes < MAX_AANTAL_RONDEN:
         print(nummer)
 
         while pogingen >0:
-            raden = int(input('Raad het getal tussen 1-1000: '))
-            verschilraden = abs(raden - nummer)
-            if raden == nummer:
-                print("geraden")
-                punten +=1
-                break
+            try:
+                raden = int(input('Raad het getal tussen 1-1000: '))
+            
+                verschilraden = abs(raden - nummer)
+                if raden == nummer:
+                    print("geraden")
+                    punten +=1
+                    break
 
-            elif verschilraden < VERSCHIL_HEEL_WARM:
-                pogingen -=1
-                print('je bent heel warm')
-                if raden < nummer:
-                    print('hoger')
+                elif verschilraden < VERSCHIL_HEEL_WARM:
+                    pogingen -=1
+                    print('je bent heel warm')
+                    if raden < nummer:
+                        print('hoger')
+                    else:
+                        print('lager')
+                    print(f'je hebt nog {pogingen} pogingen over')
+
+                elif verschilraden < 50:
+                    pogingen -=1
+                    print('je bent  warm')
+                    if raden < nummer:
+                        print('hoger')
+                    else:
+                        print('lager')
+                    print(f'je hebt nog {pogingen} pogingen over')
+                    
+
                 else:
-                    print('lager')
-                print(f'je hebt nog {pogingen} pogingen over')
-
-            elif verschilraden < 50:
-                pogingen -=1
-                print('je bent  warm')
-                if raden < nummer:
-                    print('hoger')
-                else:
-                    print('lager')
-                print(f'je hebt nog {pogingen} pogingen over')
-                
-
-            else:
-                pogingen -=1
-                print('die is niet in de buurt, opnieuw randen')
-                print(f'je hebt nog {pogingen} pogingen over')
+                    pogingen -=1
+                    print('die is niet in de buurt, opnieuw randen')
+                    print(f'je hebt nog {pogingen} pogingen over')
+            except ValueError:
+                print("Dat is geen geldig getal")
         print(f'de score is nu {punten}')
 
     else:
