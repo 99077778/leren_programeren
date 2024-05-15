@@ -19,6 +19,7 @@ fruitgewich2 = sum(fruit['weight'] for fruit in fruitmand)
 print(fruitgewich2)
 
 
+totaal = 0
 
-
-
+for fruit in fruitmand:
+    totaal += fruit['weight'] 

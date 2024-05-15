@@ -5,15 +5,20 @@ fruitmand.pop(4)
 
 
 
-fruitdict = {}
+fruitkleuren = {}
+
+fruitkleuren1 = []
+
+
+# for fruit in fruitmand:
+#     if fruit['color'] not in fruitkleuren:
+#        fruitkleuren[fruit['color']] = True
+
+# print(fruitkleuren.keys())
 
 
 
 for fruit in fruitmand:
-    if fruit['color'] not in fruitdict:
-       fruitdict[fruit['color']] = True
-
-print(fruitdict.keys())
-
-
-
+    if fruit['color'] not in fruitkleuren1:
+        fruitkleuren1.append(fruit['color'])
+print(fruitkleuren1)
